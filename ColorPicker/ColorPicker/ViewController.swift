@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private struct ColorComponent{
-    typealias SliderTag = Int
-    typealias Component = Int
     
+    private struct ColorComponent{
+        typealias SliderTag = Int
+        typealias Component = Int
+        
         static let count: Int = 4
         
         static let red: Int = 0
@@ -35,21 +36,26 @@ class ViewController: UIViewController {
         static let silderGreen: Int = 101
         static let silderBlue: Int = 102
         static let silderAlpha: Int = 103
+        static let colorView: Int = 200
+        static let pickerView: Int = 201
         
     }
-    @IBOutlet weak var colorView: UIView!
-    @IBOutlet weak var pickerView: UIPickerView!
+    //@IBOutlet weak var colorView: UIView! // tag 200
+    //@IBOutlet weak var pickerView: UIPickerView! // tag 201
     
     private let rgbStep: Float = 255.0
     private let numberOfRGBStep: Int = 256
     private let numberOfAlphaStep: Int = 11
+    
+    private var pickerView: UIPickerView!
+    private var colorView: UIView!
+    
     
     @IBAction func silderValueChanged(_ sender: UISlider) {
         guard (ViewTag.silderRed...ViewTag.silderAlpha).contains(sender.tag) else{
             print("wrong silder tag")
             return
         }
-        
         let component: Int = ColorComponent.component(from: sender.tag)
         let row: Int
         
@@ -58,14 +64,21 @@ class ViewController: UIViewController {
         } else{
             row = Int(sender.value)
         }
-    
-        self.pickerView.selectRow(row, inComponent: component, animated: false)
+        
+        
+        
+        
+        
+        pickerView.selectRow(row, inComponent: component, animated: false)
+        //self.pickerView.selectRow(row, inComponent: component, animated: false)
         
         self.matchViewColorWithCurrentValue()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.pickerView = self.view.viewWithTag(ViewTag.pickerView) as! UIPickerView
+        self.colorView = self.view.viewWithTag(ViewTag.colorView)!
         
         for i in 0..<self.pickerView.numberOfComponents {
             let numberOfRows: Int = self.pickerView.numberOfRows(inComponent: i)

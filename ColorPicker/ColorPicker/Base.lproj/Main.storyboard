@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOT-9F-3zc">
+                            <pickerView tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOT-9F-3zc">
                                 <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="kF4-RA-t9Z"/>
@@ -54,7 +54,7 @@
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-vV-KrY">
+                            <view tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-vV-KrY">
                                 <rect key="frame" x="16" y="16" width="343" height="253"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -74,10 +74,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="colorView" destination="O3h-vV-KrY" id="gjh-rK-61J"/>
-                        <outlet property="pickerView" destination="xOT-9F-3zc" id="W23-YV-v03"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
