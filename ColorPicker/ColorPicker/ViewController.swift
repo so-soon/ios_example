@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     //@IBOutlet weak var pickerView: UIPickerView! // tag 201
     
     private let rgbStep: Float = 255.0
-    private let numberOfRGBStep: Int = 256
+    private let numberOfRGBStep: Int = 52
     private let numberOfAlphaStep: Int = 11
     
     private var pickerView: UIPickerView!
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         if component == ColorComponent.alpha{
             row = Int(sender.value * 10)
         } else{
-            row = Int(sender.value)
+            row = Int(sender.value/5)
         }
         
         
@@ -125,7 +125,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
         if component == ColorComponent.alpha{
             return String(format: "%1.11f", Double(row) * 0.1)
         } else{
-            return "\(row)"
+            return "\(row*5)"
         }
     }
     
@@ -137,7 +137,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
         if component == ColorComponent.alpha{
             slider.setValue(Float(row) / 10.0 , animated: false)
         } else {
-            slider.setValue(Float(row), animated: false)
+            slider.setValue(Float(row) * 5.0, animated: false)
         }
         
         self.matchViewColorWithCurrentValue()
