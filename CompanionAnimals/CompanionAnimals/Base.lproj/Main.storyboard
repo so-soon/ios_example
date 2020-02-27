@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNl-xk-Vel">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--반려동물-->
         <scene sceneID="loF-KA-zxC">
             <objects>
                 <viewController id="eAO-5s-Esi" customClass="MainViewController" customModule="CompanionAnimals" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,36 +16,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D59-yY-e1W">
-                                <rect key="frame" x="20" y="20" width="157.5" height="157.5"/>
+                                <rect key="frame" x="20" y="64" width="130" height="130"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="157.5" id="3ID-Wr-5UI"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="157.5" id="4ig-L2-A2E"/>
                                     <constraint firstAttribute="width" secondItem="D59-yY-e1W" secondAttribute="height" multiplier="1:1" id="yqc-az-j6g"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="dog"/>
+                                <connections>
+                                    <segue destination="Z9v-Ge-Dt2" kind="show" id="wjC-KU-iNf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNH-Gu-qUe">
-                                <rect key="frame" x="197.5" y="20" width="157.5" height="157.5"/>
+                                <rect key="frame" x="225" y="64" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mNH-Gu-qUe" secondAttribute="height" multiplier="1:1" id="8m9-XR-OXG"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="cat"/>
+                                <connections>
+                                    <segue destination="Z9v-Ge-Dt2" kind="show" id="L3B-HU-Unm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsP-ec-ctF">
-                                <rect key="frame" x="20" y="198" width="153" height="143"/>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsP-ec-ctF">
+                                <rect key="frame" x="20" y="214" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RsP-ec-ctF" secondAttribute="height" multiplier="1:1" id="bwk-MF-BN7"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="rabbit"/>
+                                <connections>
+                                    <segue destination="Z9v-Ge-Dt2" kind="show" id="RFa-ie-6zs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="104" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALC-HS-2se">
-                                <rect key="frame" x="198" y="198" width="158" height="142"/>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALC-HS-2se">
+                                <rect key="frame" x="225" y="214" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ALC-HS-2se" secondAttribute="height" multiplier="1:1" id="zYV-dH-Sgn"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="hedgehog"/>
+                                <connections>
+                                    <segue destination="Z9v-Ge-Dt2" kind="show" id="F6R-ER-58f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4x-jd-2zR">
-                                <rect key="frame" x="168" y="527" width="39" height="0.0"/>
+                                <rect key="frame" x="168" y="488" width="39" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="WOD-YJ-ikh"/>
+                                    <constraint firstAttribute="width" constant="39" id="woI-Tc-Pwl"/>
+                                </constraints>
                                 <state key="normal" title="만든이"/>
+                                <connections>
+                                    <segue destination="lPF-AJ-bXl" kind="presentation" id="Q3C-XR-nah"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -62,19 +83,26 @@
                             <constraint firstItem="ALC-HS-2se" firstAttribute="trailing" secondItem="mNH-Gu-qUe" secondAttribute="trailing" id="RO9-uu-88z"/>
                             <constraint firstItem="D59-yY-e1W" firstAttribute="top" secondItem="zqw-eL-v5d" secondAttribute="top" constant="20" id="SiI-np-o8I"/>
                             <constraint firstItem="ALC-HS-2se" firstAttribute="top" secondItem="mNH-Gu-qUe" secondAttribute="bottom" constant="20" id="TDv-K1-hzs"/>
+                            <constraint firstItem="mNH-Gu-qUe" firstAttribute="height" secondItem="D59-yY-e1W" secondAttribute="height" id="VaU-YP-kRN"/>
                             <constraint firstItem="D59-yY-e1W" firstAttribute="leading" secondItem="zqw-eL-v5d" secondAttribute="leading" constant="20" id="ZYA-SL-Zz3"/>
+                            <constraint firstItem="ALC-HS-2se" firstAttribute="height" secondItem="D59-yY-e1W" secondAttribute="height" id="aah-3g-Scf"/>
+                            <constraint firstItem="mNH-Gu-qUe" firstAttribute="width" secondItem="D59-yY-e1W" secondAttribute="width" id="bq9-rn-cLG"/>
                             <constraint firstItem="mNH-Gu-qUe" firstAttribute="width" secondItem="D59-yY-e1W" secondAttribute="width" id="f4o-5i-C0o"/>
-                            <constraint firstItem="mNH-Gu-qUe" firstAttribute="leading" secondItem="D59-yY-e1W" secondAttribute="trailing" constant="20" id="loV-ii-PLa"/>
+                            <constraint firstItem="RsP-ec-ctF" firstAttribute="width" secondItem="D59-yY-e1W" secondAttribute="width" id="ff7-ia-4bK"/>
+                            <constraint firstItem="mNH-Gu-qUe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D59-yY-e1W" secondAttribute="trailing" constant="20" id="loV-ii-PLa"/>
                             <constraint firstItem="c4x-jd-2zR" firstAttribute="top" secondItem="RsP-ec-ctF" secondAttribute="bottom" constant="144" id="npD-a7-ArU"/>
                             <constraint firstItem="c4x-jd-2zR" firstAttribute="leading" secondItem="zqw-eL-v5d" secondAttribute="leading" constant="168" id="rqm-0h-pEP"/>
+                            <constraint firstItem="ALC-HS-2se" firstAttribute="width" secondItem="D59-yY-e1W" secondAttribute="width" id="rzC-9y-GFc"/>
                             <constraint firstItem="ALC-HS-2se" firstAttribute="bottom" secondItem="RsP-ec-ctF" secondAttribute="bottom" id="vkv-WB-54a"/>
+                            <constraint firstItem="RsP-ec-ctF" firstAttribute="height" secondItem="D59-yY-e1W" secondAttribute="height" id="zci-O5-RdO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zqw-eL-v5d"/>
                     </view>
+                    <navigationItem key="navigationItem" title="반려동물" id="PDA-oI-6tF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8z-xl-fqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256.80000000000001" y="14.842578710644679"/>
+            <point key="canvasLocation" x="1196" y="14.842578710644679"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="xu6-0i-86d">
@@ -85,13 +113,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ct7-4f-GeK">
-                                <rect key="frame" x="16" y="16" width="343" height="343"/>
+                                <rect key="frame" x="16" y="60" width="343" height="343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ct7-4f-GeK" secondAttribute="height" multiplier="1:1" id="lCC-1N-RVd"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0h7-tI-3xL">
-                                <rect key="frame" x="16" y="395.5" width="343" height="255.5"/>
+                                <rect key="frame" x="16" y="439.5" width="343" height="211.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Kbn-8r-Gva"/>
@@ -102,7 +130,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tn1-sZ-gNZ">
-                                <rect key="frame" x="16" y="367" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="411" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -124,17 +152,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tg0-Hn-Y2h"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WMk-Tq-u1R"/>
+                    <connections>
+                        <outlet property="animalImageView" destination="Ct7-4f-GeK" id="VaO-dp-nIt"/>
+                        <outlet property="descriptionTextView" destination="0h7-tI-3xL" id="uKO-ne-fdz"/>
+                        <outlet property="nameLabel" destination="Tn1-sZ-gNZ" id="ddh-IA-de6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAl-lM-zYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="15"/>
+            <point key="canvasLocation" x="1948" y="14.842578710644679"/>
         </scene>
         <!--Maker View Controller-->
         <scene sceneID="0Un-Am-uO7">
             <objects>
                 <viewController id="lPF-AJ-bXl" customClass="MakerViewController" customModule="CompanionAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFK-MT-XwZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-Mo-cJq">
@@ -146,16 +180,20 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtY-s2-bPd">
-                                <rect key="frame" x="16" y="621" width="343" height="30"/>
+                                <rect key="frame" x="16" y="601" width="343" height="30"/>
                                 <state key="normal" title="닫기"/>
+                                <connections>
+                                    <action selector="touchUpInsideDimissButton:" destination="lPF-AJ-bXl" eventType="touchUpInside" id="ZEx-Ef-3Db"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3hz-qm-8r5">
-                                <rect key="frame" x="16" y="136.5" width="343" height="476.5"/>
+                                <rect key="frame" x="16" y="136.5" width="343" height="456.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -173,10 +211,31 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wjg-6b-eSD"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="3hz-qm-8r5" id="0UJ-2a-aeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFO-bl-Ydt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="15"/>
+            <point key="canvasLocation" x="1924" y="767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pih-If-2g2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CNl-xk-Vel" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eid-pT-iqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eAO-5s-Esi" kind="relationship" relationship="rootViewController" id="ftm-Qq-8vA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvZ-An-ygT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="14.842578710644679"/>
         </scene>
     </scenes>
     <resources>
@@ -186,4 +245,7 @@
         <image name="rabbit" width="330" height="330"/>
         <image name="yagom" width="167" height="160.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="F6R-ER-58f"/>
+    </inferredMetricsTieBreakers>
 </document>

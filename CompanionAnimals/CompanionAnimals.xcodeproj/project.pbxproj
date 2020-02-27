@@ -17,6 +17,7 @@
 		66F38D432406674700B4ECA9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F38D422406674700B4ECA9 /* MainViewController.swift */; };
 		66F38D452406676400B4ECA9 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F38D442406676400B4ECA9 /* DescriptionViewController.swift */; };
 		66F38D472406676C00B4ECA9 /* MakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F38D462406676C00B4ECA9 /* MakerViewController.swift */; };
+		66F38D4924079B6800B4ECA9 /* AnimalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F38D4824079B6800B4ECA9 /* AnimalInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		66F38D422406674700B4ECA9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		66F38D442406676400B4ECA9 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		66F38D462406676C00B4ECA9 /* MakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerViewController.swift; sourceTree = "<group>"; };
+		66F38D4824079B6800B4ECA9 /* AnimalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				66F38D3E240666A800B4ECA9 /* Images.xcassets */,
 				66F38D35240665A600B4ECA9 /* LaunchScreen.storyboard */,
 				66F38D38240665A600B4ECA9 /* Info.plist */,
+				66F38D4824079B6800B4ECA9 /* AnimalInfo.swift */,
 			);
 			path = CompanionAnimals;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				66F38D452406676400B4ECA9 /* DescriptionViewController.swift in Sources */,
 				66F38D2B240665A500B4ECA9 /* AppDelegate.swift in Sources */,
 				66F38D2D240665A500B4ECA9 /* SceneDelegate.swift in Sources */,
+				66F38D4924079B6800B4ECA9 /* AnimalInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
