@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "49305310-68BE-4C7D-B030-E8D2B030FD71"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F4D63AA-FAAF-4AF5-BAE1-E0A49D8494DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginFlow/InfoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "InfoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0F4D63AA-FAAF-4AF5-BAE1-E0A49D8494DF - 6c7b3f40ddc76dc2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginFlow.InfoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; LoginFlow.InfoViewController"
+                  moduleName = "LoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sosoon/coding/ios-yagom/LoginFlow/LoginFlow/InfoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "0F4D63AA-FAAF-4AF5-BAE1-E0A49D8494DF - c8d684bde797f4d9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginFlow.InfoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LoginFlow.InfoViewController&gt;"
+                  moduleName = "LoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sosoon/coding/ios-yagom/LoginFlow/LoginFlow/InfoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "90">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0CC3F1C-E2E5-46EF-9997-8C41FE493500"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
