@@ -9,13 +9,11 @@
 import UIKit
 
 class MakerViewController: UIViewController {
-
-    @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.descriptionTextView.text = "야호 https://www.google.com"
 
         // Do any additional setup after loading the view.
