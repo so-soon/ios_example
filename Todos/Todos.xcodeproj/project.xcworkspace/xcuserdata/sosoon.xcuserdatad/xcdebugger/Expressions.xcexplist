@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TodosTableViewController.tableView(_:numberOfRowsInSection:):TodosTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TodoViewController.initializeViews():TodoViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TodoViewController.callViewWillAppear():TodoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController?.parent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TodoViewController.touchUpCancelButton(_:):TodoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.modalPresentationStyle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TodosTableViewController.viewWillAppear(_:):TodosTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView">
+            </PersistentString>
+            <PersistentString
+               value = "Todo.all">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

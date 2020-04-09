@@ -49,12 +49,17 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let textFromField : String = (textField.text ?? "") + string
-        if string == "" {}
-        if textFromField.count >= 4 {
+        guard let textFieldText = textField.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        print(textFieldText.count)
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        if count >= 4 {
             loginButton.isEnabled = true
         }
-        else {loginButton.isEnabled = false}
+        else{loginButton.isEnabled = false}
         return true
     }
     

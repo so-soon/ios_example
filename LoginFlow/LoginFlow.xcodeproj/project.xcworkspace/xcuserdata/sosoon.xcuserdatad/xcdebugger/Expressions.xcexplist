@@ -4,11 +4,6 @@
    <ContextStates>
       <ContextState
          contextName = "LoginViewController.textField(_:shouldChangeCharactersIn:replacementString:):LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "textFromField.count">
-            </PersistentString>
-         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "InfoViewController.init(coder:):InfoViewController.swift">
